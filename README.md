@@ -34,9 +34,13 @@
 6. 输出完成，写入文件，生成dist
 
 ### 加深理解请看 simple-webpack 
+[webpack 示例代码](https://github.com/mrandpz/webpack-blood/tree/main/simple-webpack)
+### 我们直接写出来的是 module，webpack 处理时是 chunk（多个module生成），最后生成浏览器可以直接运行的 bundle。
 
-### 我们直接写出来的是 module，webpack 处理时是 chunk，最后生成浏览器可以直接运行的 bundle。
-
+# TODO
+- [ ] webpack 脚手架
+- [ ] webpack 插件
+- [ ] webpack loader
 
 
 
