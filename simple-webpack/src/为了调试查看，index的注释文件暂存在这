@@ -1,0 +1,54 @@
+/*
+ * @Author: Mr.pz 
+ * @Date: 2021-01-25 16:15:13 
+ * @Last Modified by: Mr.pz
+ * @Last Modified time: 2021-01-25 16:47:43
+ * 生成的AST
+ * 
+ Node {
+  type: 'File',
+  start: 0,
+  end: 99,
+  loc: SourceLocation {
+    start: Position { line: 1, column: 0 },
+    end: Position { line: 6, column: 0 },
+    filename: undefined,
+    identifierName: undefined
+  },
+  range: undefined,
+  leadingComments: undefined,
+  trailingComments: undefined,
+  innerComments: undefined,
+  extra: undefined,
+  errors: [],
+  program: Node {
+    type: 'Program',
+    start: 0,
+    end: 99,
+    loc: SourceLocation {
+      start: [Position],
+      end: [Position],
+      filename: undefined,
+      identifierName: undefined
+    },
+    range: undefined,
+    leadingComments: undefined,
+    trailingComments: undefined,
+    innerComments: undefined,
+    extra: undefined,
+    sourceType: 'module',
+    interpreter: null,
+    body: [ [Node] ],
+    directives: []
+  },
+  comments: [
+    {
+      type: 'CommentLine',
+      value: ' this is a test entry',
+      start: 21,
+      end: 44,
+      loc: [SourceLocation]
+    }
+  ]
+}
+ */
