@@ -6,13 +6,14 @@
     function localRequire(relativePath) {
       return require(graph[moduleId].dependecies[relativePath]); // {__esModule: true, say: ƒ say(name)}    }
       // 定义exports对象
-      var exports = {};
-      (function (require, exports, code) {
-        // commonjs语法使用module.exports暴露实现,我们传入的exports对象会捕获依赖对象(hello.js)暴露的实现(exports.say = say)并写入
-        eval(code);
-      })(localRequire, exports, graph[moduleId].code); // 暴露exports对象,即暴露依赖对象对应的实现
-      return exports;
     }
+    var exports = {};
+    (function (require, exports, code) {
+      // commonjs语法使用module.exports暴露实现,我们传入的exports对象会捕获依赖对象(hello.js)暴露的实现(exports.say = say)并写入
+      eval(code);
+    })(localRequire, exports, graph[moduleId].code);
+    // 暴露exports对象,即暴露依赖对象对应的实现
+    return exports;
   }
   // 从入口文件开始执行
   require("./src/index.js");
